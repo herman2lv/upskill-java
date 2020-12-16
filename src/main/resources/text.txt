@@ -1,0 +1,23 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+class Scratch {
+    public static void main(String[] args) throws IOException {
+        FileReader fileReader = new FileReader("C:/Users/Herma/AppData/Roaming/JetBrains/IdeaIC2020.2/scratches/scratch_1.java");
+        FileWriter fileWriter = new FileWriter("data/text.txt");
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        String string;
+        while ((string = bufferedReader.readLine()) != null) {
+            bufferedWriter.write(string);
+            bufferedWriter.newLine();
+        }
+        bufferedWriter.close();
+        bufferedReader.close();
+        fileReader.close();
+        fileWriter.close();
+    }
+}
