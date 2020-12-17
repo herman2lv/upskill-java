@@ -3,7 +3,7 @@ package com.epam.fundamentals;
 import java.util.Scanner;
 
 public class MainTask1 {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
 //Task is to greet any user after input of his name using command line
         System.out.print("Please, enter your name : ");
         Scanner scanner = new Scanner(System.in);

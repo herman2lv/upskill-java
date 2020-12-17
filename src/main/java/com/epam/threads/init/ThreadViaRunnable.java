@@ -8,7 +8,7 @@ public class ThreadViaRunnable implements Runnable {
         for (int i = 0; i < 12; i++) {
             System.out.println("\tRunnable " + i);
             try {
-                TimeUnit.MILLISECONDS.sleep(Main.iterationInterval);
+                TimeUnit.MILLISECONDS.sleep(Main.ITERATION_INTERVAL);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

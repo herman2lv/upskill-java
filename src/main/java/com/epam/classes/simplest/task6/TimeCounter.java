@@ -89,11 +89,11 @@ public class TimeCounter {
 
     private void normalizeTime() {
         if (this.seconds >= NUMBER_OF_SECONDS_IN_MINUTE) {
-            this.minutes += this.seconds/NUMBER_OF_SECONDS_IN_MINUTE;
+            this.minutes += this.seconds / NUMBER_OF_SECONDS_IN_MINUTE;
             this.seconds = this.seconds % NUMBER_OF_SECONDS_IN_MINUTE;
         }
         if (this.minutes >= NUMBER_OF_MINUTES_IN_HOUR) {
-            this.hours += this.minutes/NUMBER_OF_MINUTES_IN_HOUR;
+            this.hours += this.minutes / NUMBER_OF_MINUTES_IN_HOUR;
             this.minutes = this.minutes % NUMBER_OF_MINUTES_IN_HOUR;
         }
     }

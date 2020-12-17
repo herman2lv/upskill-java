@@ -49,12 +49,12 @@ public class Payment {
 
         @Override
         public String toString() {
-            return "\nOrder{" +
-                    "orderId=" + orderId +
-                    ", product=" + product.getName() +
-                    " (price=" + product.getCost() +
-                    " USD), number=" + number +
-                    '}';
+            return "\nOrder{"
+                    + "orderId=" + orderId
+                    + ", product=" + product.getName()
+                    + " (price=" + product.getCost()
+                    + " USD), number=" + number
+                    + '}';
         }
     }
 

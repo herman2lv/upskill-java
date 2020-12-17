@@ -4,7 +4,7 @@ import com.epam.algorithmization.sorting.ArrayService;
 
 public class Task1 {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[][] matrix = arrayService.generateMatrix();
         System.out.println("\n\tInitial matrix:\n");

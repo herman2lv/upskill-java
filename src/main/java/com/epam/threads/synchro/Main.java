@@ -14,7 +14,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(commonResource.builder);
+        System.out.println(commonResource.getBuilder());
 
 
     }

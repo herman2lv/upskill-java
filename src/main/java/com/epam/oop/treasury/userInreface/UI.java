@@ -55,7 +55,8 @@ public class UI {
         System.out.println("You are in the main menu");
         System.out.println(COMMANDS);
         while (true) {
-            System.out.println("Please, chose available action (enter the digit from 1 to 5 that stands for the option number)");
+            System.out.println("Please, chose available action "
+                    + "(enter the digit from 1 to 5 that stands for the option number)");
             String data = scanner.nextLine().strip();
             switch (data) {
                 case "1" -> {
@@ -79,8 +80,8 @@ public class UI {
                     try {
                         sum = Double.parseDouble(data);
                     } catch (NumberFormatException e) {
-                        System.out.println("Entered number couldn't be recognized. " +
-                                "Please, use numbers in standard US format (dd.dd)");
+                        System.out.println("Entered number couldn't be recognized. "
+                                + "Please, use numbers in standard US format (dd.dd)");
                         break;
                     }
                     List<Treasure> selectedTreasures = treasureService.getOnCertainSum(sum);
@@ -89,8 +90,8 @@ public class UI {
                             treasureService.getTotalCost(selectedTreasures));
                 }
                 case "5" -> treasureService.getMostExpensive()
-                        .ifPresentOrElse(treasure -> System.out.printf("The most expensive treasure is: %s\n", treasure),
-                                () -> System.out.println("The treasury is empty"));
+                        .ifPresentOrElse(treasure -> System.out.printf("The most expensive treasure is: %s\n",
+                                treasure), () -> System.out.println("The treasury is empty"));
                 case "help" -> {
                     System.out.print(HELP);
                     System.out.println(COMMANDS);

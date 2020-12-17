@@ -3,7 +3,7 @@ package com.epam.basics.linear;
 import com.epam.basics.cycles.NumberService;
 
 public class Task3 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String expression = """
                 sin x + cos y
                 -------------- * tg xy

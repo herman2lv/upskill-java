@@ -70,24 +70,24 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "\nCustomer{" +
-                "id=" + id +
-                ", name='" + firstName + ' ' +
-                lastName + '\'' +
-                ", creditCardNumber='" + creditCardNumber + '\'' +
-                '}';
+        return "\nCustomer{"
+                + "id=" + id
+                + ", name='" + firstName + ' '
+                + lastName + '\''
+                + ", creditCardNumber='" + creditCardNumber + '\''
+                + '}';
     }
 
     public String toStringFull() {
-        return "\nCustomer{" +
-                "id=" + id +
-                ", name='" + firstName + ' ' +
-                lastName + '\'' +
-                ", patronymic='" + patronymic + '\'' +
-                ", address='" + address + '\'' +
-                ", creditCardNumber='" + creditCardNumber + '\'' +
-                ", bankAccountNumber='" + bankAccountNumber + '\'' +
-                '}';
+        return "\nCustomer{"
+                + "id=" + id
+                + ", name='" + firstName + ' '
+                + lastName + '\''
+                + ", patronymic='" + patronymic + '\''
+                + ", address='" + address + '\''
+                + ", creditCardNumber='" + creditCardNumber + '\''
+                + ", bankAccountNumber='" + bankAccountNumber + '\''
+                + '}';
     }
 
     public static class NameComparator implements Comparator<Customer> {

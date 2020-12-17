@@ -3,19 +3,19 @@ package com.epam.algorithmization.matrix;
 import com.epam.algorithmization.sorting.ArrayService;
 
 public class Task16 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int size;
         ArrayService arrayService = new ArrayService();
         do {
             System.out.print("\nPlease, enter a size of the Magic square");
             size = arrayService.getIntFomConsole();
-            if (size %2 == 0 || size <= 0) {
+            if (size % 2 == 0 || size <= 0) {
                 System.out.print("The value should be positive and odd");
             }
-        } while (size %2 == 0 || size <= 0);
+        } while (size % 2 == 0 || size <= 0);
         int[][] matrix = new int[size][size];
-        int i = size/2;
-        int j = size-1;
+        int i = size / 2;
+        int j = size - 1;
         for (int value = 1; value <= Math.pow(size, 2);) {
             if (i == -1 && j == size) {
                 j = size - 2;

@@ -34,9 +34,9 @@ public class GardenFlower implements Flower {
 
     @Override
     public String toString() {
-        return "\nFlower{" +
-                "kind=" + kind +
-                ", length=" + length +
-                '}';
+        return "\nFlower{"
+                + "kind=" + kind
+                + ", length=" + length
+                + '}';
     }
 }

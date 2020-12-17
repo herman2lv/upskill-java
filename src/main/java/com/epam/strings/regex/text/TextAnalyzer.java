@@ -55,16 +55,16 @@ public class TextAnalyzer {
 
     public String sortWordsByNumberOfChars(String sentence, String character) {
         sentence = sentence.strip().replaceAll("\\p{Punct}", "");
-        String[] words = sentence.split("\s+");
+        String[] words = sentence.split("\\s+");
         for (int gap = words.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < words.length; i++) {
                 for (int j = i - gap;
-                     j >= 0 && getNumberOfCertainChars(words[j], character) <=
-                             getNumberOfCertainChars(words[j + gap], character);
+                     j >= 0 && getNumberOfCertainChars(words[j], character)
+                               <= getNumberOfCertainChars(words[j + gap], character);
                      j -= gap) {
-                    if (getNumberOfCertainChars(words[j], character) ==
-                                    getNumberOfCertainChars(words[j + gap], character) &&
-                                    words[j].compareToIgnoreCase(words[j + gap]) < 0) {
+                    if (getNumberOfCertainChars(words[j], character)
+                        == getNumberOfCertainChars(words[j + gap], character)
+                        && words[j].compareToIgnoreCase(words[j + gap]) < 0) {
                         continue;
                     }
                         String temp = words[j];
@@ -77,12 +77,12 @@ public class TextAnalyzer {
     }
 
     private String[] splitParagraphBySentences(String paragraph) {
-        return paragraph.split("[.?!]+\s*");
+        return paragraph.split("[.?!]+\\s*");
     }
 
     private String sortWordsByLength(String sentence) {
         sentence = sentence.strip().replaceAll("\\p{Punct}", "");
-        String[] words = sentence.split("\s+");
+        String[] words = sentence.split("\\s+");
         for (int gap = words.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < words.length; i++) {
                 for (int j = i - gap;

@@ -33,7 +33,7 @@ public class Sentence {
         words.forEach(System.out::print);
     }
 
-    public void addWords (Word ... words) {
+    public void addWords(Word... words) {
         Collections.addAll(this.words, words);
     }
 

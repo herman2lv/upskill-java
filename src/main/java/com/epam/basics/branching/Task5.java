@@ -5,10 +5,10 @@ import com.epam.basics.cycles.NumberService;
 import java.math.BigDecimal;
 
 public class Task5 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String function = """
                         x² - 3x + 9, if x ≤ 3;
-                F(x)={ 
+                F(x)={
                         1 / (x³ + 6), if x > 3.
                 """;
         System.out.printf("Function: \n%s", function);

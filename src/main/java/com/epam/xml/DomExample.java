@@ -102,7 +102,8 @@ class StaxWriteExample {
     public static void main(String[] args) {
         try {
             XMLOutputFactory output = XMLOutputFactory.newInstance();
-            XMLStreamWriter writer = output.createXMLStreamWriter(new FileWriter("src/main/resources/CreatedBookCatalog.xml"));
+            XMLStreamWriter writer =
+                    output.createXMLStreamWriter(new FileWriter("src/main/resources/CreatedBookCatalog.xml"));
 
             // Открываем XML-документ и Пишем корневой элемент BookCatalogue
             writer.writeStartDocument("1.0");
@@ -136,7 +137,7 @@ class StaxWriteExample {
                 // Cost
                 writer.writeStartElement("Cost");
                 writer.writeAttribute("currency", "USD");
-                writer.writeCharacters("" + (i+10));
+                writer.writeCharacters("" + (i + 10));
                 writer.writeEndElement();
 
                 // Закрываем тэг Book

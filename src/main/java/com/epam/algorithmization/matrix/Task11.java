@@ -5,7 +5,7 @@ import com.epam.algorithmization.sorting.ArrayService;
 import java.util.Random;
 
 public class Task11 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int[][] matrix = new int[10][20];
         int[] counterOf5 = new int[matrix.length];
         for (int i = 0; i < matrix.length; i++) {
@@ -14,7 +14,7 @@ public class Task11 {
                 matrix[i][j] = random.nextInt(16);
                 if (matrix[i][j] == 5) {
                     counterOf5[i]++;
-                    if (counterOf5[i]==3){
+                    if (counterOf5[i] == 3) {
                         break;
                     }
                 }
@@ -27,7 +27,7 @@ public class Task11 {
         boolean exists = false;
         for (int i = 0; i < counterOf5.length; i++) {
             if (counterOf5[i] >= 3) {
-                System.out.printf("%-5d", i+1);
+                System.out.printf("%-5d", i + 1);
                 exists = true;
             }
         }

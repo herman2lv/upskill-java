@@ -22,7 +22,11 @@ public class DeleteConfirmationWindow extends JDialog implements ActionListener 
         buildButtons();
         setModal(true);
         setResizable(false);
-        setBounds(750, 425, 450, 165);
+        int coordinateX = 750;
+        int coordinateY = 425;
+        int width = 450;
+        int height = 165;
+        setBounds(coordinateX, coordinateY, width, height);
         setTitle("Deleting confirmation");
         setVisible(true);
     }
@@ -31,15 +35,21 @@ public class DeleteConfirmationWindow extends JDialog implements ActionListener 
         JLabel message = new JLabel();
         message.setHorizontalAlignment(SwingConstants.CENTER);
         message.setText("Do you really want to delete this contact?");
-        message.setBounds(75, 10, 300, 25);
+        int leftMargin = 75;
+        int topMargin = 10;
+        int width = 300;
+        int height = 25;
+        message.setBounds(leftMargin, topMargin, width, height);
         add(message);
         JLabel contactIdInfo = new JLabel();
         contactIdInfo.setText("Contact ID:          " + contact.getContactId());
-        contactIdInfo.setBounds(75, 35, 300, 25);
+        topMargin = 35;
+        contactIdInfo.setBounds(leftMargin, topMargin, width, height);
         add(contactIdInfo);
         JLabel contactNameInfo = new JLabel();
         contactNameInfo.setText("Contact name:   " + contact.getFirstName() + " " + contact.getLastName());
-        contactNameInfo.setBounds(75, 50, 300, 25);
+        topMargin = 50;
+        contactNameInfo.setBounds(leftMargin, topMargin, width, height);
         add(contactNameInfo);
     }
 
@@ -47,12 +57,17 @@ public class DeleteConfirmationWindow extends JDialog implements ActionListener 
         JButton yesButton = new JButton("Yes");
         yesButton.setActionCommand(YES);
         yesButton.addActionListener(this);
-        yesButton.setBounds(100, 85, 120, 25);
+        int coordinateX = 100;
+        int coordinateY = 85;
+        int width = 120;
+        int height = 25;
+        yesButton.setBounds(coordinateX, coordinateY, width, height);
         add(yesButton);
         JButton noButton = new JButton("No");
         noButton.setActionCommand(NO);
         noButton.addActionListener(this);
-        noButton.setBounds(230, 85, 120, 25);
+        coordinateX = 230;
+        noButton.setBounds(coordinateX, coordinateY, width, height);
         add(noButton);
     }
 

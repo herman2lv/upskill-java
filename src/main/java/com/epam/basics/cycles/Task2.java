@@ -5,12 +5,11 @@ import java.math.RoundingMode;
 import java.util.Arrays;
 
 public class Task2 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String function = """
                     x, if x > 2;
-                y={ 
+                y={
                     -x, if x ≤ 2.
-                                
                 """;
         System.out.printf("Function: \n%s", function);
         System.out.print("Please, set up a left limit of the set of the x's values");
@@ -31,11 +30,13 @@ public class Task2 {
             step = numberService.getBigDecimalFomConsole();
             if (step.compareTo(rightLimit.subtract(leftLimit)) > 0) {
                 System.out.printf("Step couldn't be greater than the set [%.2f;%.2f]\n", leftLimit, rightLimit);
-                System.out.printf("(the largest possible value is %.2f)\nPlease, try again", rightLimit.subtract(leftLimit));
+                System.out.printf("(the largest possible value is %.2f)\nPlease, try again",
+                        rightLimit.subtract(leftLimit));
             } else if (step.compareTo(BigDecimal.valueOf(0.0)) <= 0) {
                 System.out.print("Step couldn't be less than or equal to 0");
             }
-        } while ((step.compareTo(rightLimit.subtract(leftLimit)) > 0) || (step.compareTo(BigDecimal.valueOf(0.0)) <= 0));
+        } while ((step.compareTo(rightLimit.subtract(leftLimit)) > 0)
+                || (step.compareTo(BigDecimal.valueOf(0.0)) <= 0));
         int numberOfSteps = ((rightLimit.subtract(leftLimit)).divide(step, 10, RoundingMode.HALF_UP)).intValue() + 1;
         BigDecimal[] valuesOfY = new BigDecimal[numberOfSteps];
             int i = 0;

@@ -5,7 +5,7 @@ import com.epam.algorithmization.sorting.ArrayService;
 import java.util.Arrays;
 
 public class Task4 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         double[] array = arrayService.generateArrayOfDoubles();
         System.out.printf("Initial array%n%s", Arrays.toString(array));
@@ -19,8 +19,8 @@ public class Task4 {
                 min = i;
             }
         }
-        System.out.printf("%nMax element of the array:\t%f\t(it's position:\t%d)", array[max], max+1);
-        System.out.printf("%nMin element of the array:\t%f\t(it's position:\t%d)", array[min], min+1);
+        System.out.printf("%nMax element of the array:\t%f\t(it's position:\t%d)", array[max], max + 1);
+        System.out.printf("%nMin element of the array:\t%f\t(it's position:\t%d)", array[min], min + 1);
         double temp = array[min];
         array[min] = array[max];
         array[max] = temp;

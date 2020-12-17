@@ -3,7 +3,7 @@ package com.epam.algorithmization.decomposition;
 import static com.epam.algorithmization.decomposition.Service.getAreaOfHexagon;
 
 public class Task3 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Service service = new Service();
         double side;
         do {

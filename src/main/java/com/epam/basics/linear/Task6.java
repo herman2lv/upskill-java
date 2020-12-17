@@ -3,7 +3,7 @@ package com.epam.basics.linear;
 import com.epam.basics.cycles.NumberService;
 
 public class Task6 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         NumberService numberService = new NumberService();
         System.out.print("Please, enter a value of variable 'x'");
         double x = (numberService.getBigDecimalFomConsole()).doubleValue();

@@ -6,7 +6,7 @@ import static com.epam.algorithmization.decomposition.Service.getGreatestCommonD
 import static com.epam.algorithmization.decomposition.Service.getLeastCommonMultiple;
 
 public class Task1 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int a = arrayService.getIntFomConsolePositive();
         int b  = arrayService.getIntFomConsolePositive();

@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class Task2 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String expression = """
                 b + √(b² + 4ac)
                 --------------- - a³c + b⁻²

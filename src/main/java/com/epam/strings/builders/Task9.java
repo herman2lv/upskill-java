@@ -15,7 +15,7 @@ public class Task9 {
         System.out.printf("The string:%n\"%s\"%ncontains %d small and %d capital letters",
                 string, countSmallLetters, countCapitalLetters);
     }
-    public static int getNumberOfCharacters (String regex, String string) {
+    public static int getNumberOfCharacters(String regex, String string) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(string);
         int countCharacters = 0;

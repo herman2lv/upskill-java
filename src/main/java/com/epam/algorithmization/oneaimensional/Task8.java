@@ -5,7 +5,7 @@ import com.epam.algorithmization.sorting.ArrayService;
 import java.util.Arrays;
 
 public class Task8 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[] array = arrayService.generateArray();
         System.out.printf("Initial array%n%s%n", Arrays.toString(array));

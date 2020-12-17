@@ -1,7 +1,7 @@
 package com.epam.oop.files.beans;
 
-public class File<T> extends Metadata implements FileI<T>{
-    T content;
+public class File<T> extends Metadata implements FileI<T> {
+    private T content;
 
     public File(String name) {
         super(name);
@@ -19,9 +19,15 @@ public class File<T> extends Metadata implements FileI<T>{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof File)) return false;
-        if (!super.equals(o)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof File)) {
+            return false;
+        }
+        if (!super.equals(o)) {
+            return false;
+        }
 
         File<?> file = (File<?>) o;
 

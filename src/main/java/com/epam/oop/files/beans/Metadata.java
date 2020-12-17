@@ -1,8 +1,8 @@
 package com.epam.oop.files.beans;
 
-class Metadata implements MetadataI{
-    String name;
-    String parentDir;
+class Metadata implements MetadataI {
+    private String name;
+    private String parentDir;
 
     @Override
     public String getName() {
@@ -24,19 +24,27 @@ class Metadata implements MetadataI{
         this.parentDir = parentDir;
     }
 
-    public Metadata(String name) {
+    Metadata(String name) {
         this.name = name;
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Metadata)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Metadata)) {
+            return false;
+        }
 
         Metadata metadata = (Metadata) o;
 
-        if (getName() != null ? !getName().equals(metadata.getName()) : metadata.getName() != null) return false;
-        return getParentDir() != null ? getParentDir().equals(metadata.getParentDir()) : metadata.getParentDir() == null;
+        if (getName() != null ? !getName().equals(metadata.getName()) : metadata.getName() != null) {
+            return false;
+        }
+        return getParentDir() != null
+                ? getParentDir().equals(metadata.getParentDir())
+                : metadata.getParentDir() == null;
     }
 
     @Override

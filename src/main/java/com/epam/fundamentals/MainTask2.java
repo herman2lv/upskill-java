@@ -3,7 +3,7 @@ package com.epam.fundamentals;
 import java.util.Arrays;
 
 public class MainTask2 {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         //Task is to display in console command line arguments in reversed order
         if (args.length == 0) {
             System.out.println("There is no any command line arguments");

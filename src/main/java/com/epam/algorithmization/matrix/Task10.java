@@ -3,7 +3,7 @@ package com.epam.algorithmization.matrix;
 import com.epam.algorithmization.sorting.ArrayService;
 
 public class Task10 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[][] matrix = arrayService.generateSquareMatrix();
         System.out.println("\n\tInitial matrix:\n");

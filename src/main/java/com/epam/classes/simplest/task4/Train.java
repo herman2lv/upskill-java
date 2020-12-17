@@ -27,11 +27,11 @@ public class Train {
 
     @Override
     public String toString() {
-        return "\nTrain{" +
-                "destination='" + destination + '\'' +
-                ",\tnumber=" + number +
-                ",\tdepartureTime='" + departureTime + '\'' +
-                '}';
+        return "\nTrain{"
+                + "destination='" + destination + '\''
+                + ",\tnumber=" + number
+                + ",\tdepartureTime='" + departureTime + '\''
+                + '}';
     }
 
     public static class NumberComparator implements Comparator<Train> {

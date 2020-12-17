@@ -3,7 +3,7 @@ package com.epam.algorithmization.matrix;
 import com.epam.algorithmization.sorting.ArrayService;
 
 public class Task8 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[][] matrix = arrayService.generateMatrix();
         System.out.println("\n\tInitial matrix:\n");
@@ -28,9 +28,9 @@ public class Task8 {
             }
         } while (column2 <= 0 || column2 > matrix.length || column2 == column1);
         for (int i = 0; i < matrix.length; i++) {
-            int temp = matrix[i][column1-1];
-            matrix[i][column1-1] = matrix[i][column2-1];
-            matrix[i][column2-1] = temp;
+            int temp = matrix[i][column1 - 1];
+            matrix[i][column1 - 1] = matrix[i][column2 - 1];
+            matrix[i][column2 - 1] = temp;
         }
         System.out.println("\n\tModified matrix:\n");
         arrayService.printMatrix(matrix);

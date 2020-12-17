@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShopDAO {
-    List<Product> catalogue = new ArrayList<>();
+    private final List<Product> catalogue = new ArrayList<>();
 
     public ShopDAO() {
         catalogue.add(new Product("Cognac", BigDecimal.valueOf(14.99)));

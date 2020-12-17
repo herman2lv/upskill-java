@@ -3,18 +3,18 @@ package com.epam.basics.branching;
 import java.util.Random;
 
 public class AngleService {
-    final int SUM_OF_TRIANGLE_ANGLES = 180;
-    final int RIGHT_ANGLE = 90;
-    Random random = new Random();
+    private static final int SUM_OF_TRIANGLE_ANGLES = 180;
+    private static final int RIGHT_ANGLE = 90;
+    private static final Random RANDOM = new Random();
 
-    public int generateAngle () {
+    public int generateAngle() {
         int angle = 0;
         while (angle == 0) {
-            angle = random.nextInt(SUM_OF_TRIANGLE_ANGLES);
+            angle = RANDOM.nextInt(SUM_OF_TRIANGLE_ANGLES);
             }
         return angle;
     }
-    public void printTriangleInfo (int firstAngle, int secondAngle) {
+    public void printTriangleInfo(int firstAngle, int secondAngle) {
         if (firstAngle > 0 && secondAngle > 0 && (firstAngle + secondAngle) < SUM_OF_TRIANGLE_ANGLES) {
             System.out.println("This triangle can exist");
         } else {

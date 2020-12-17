@@ -4,7 +4,7 @@ import static com.epam.algorithmization.decomposition.Service.getNumberOfEvenDig
 import static com.epam.algorithmization.decomposition.Service.getSumOfNumbersWithOddDigits;
 
 public class Task16 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int n = 6;
         int sum = getSumOfNumbersWithOddDigits(n);
         System.out.printf("The sum of all %d-sign numbers containing only odd digits is %d%n", n, sum);

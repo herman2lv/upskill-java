@@ -3,7 +3,7 @@ package com.epam.algorithmization.matrix;
 import com.epam.algorithmization.sorting.ArrayService;
 
 public class Task4 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int n = arrayService.getIntFomConsolePositiveEven("size of matrix");
         int[][] matrix = new int[n][n];

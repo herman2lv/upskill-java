@@ -53,12 +53,12 @@ public class Account {
 
     @Override
     public String toString() {
-        return "\nAccount{" +
-                "accountType=" + accountType +
-                ", number='" + number + '\'' +
-                ", balance=" + balance +
-                ", isActive=" + isActive +
-                '}';
+        return "\nAccount{"
+                + "accountType=" + accountType
+                + ", number='" + number + '\''
+                + ", balance=" + balance
+                + ", isActive=" + isActive
+                + '}';
     }
 
     public static class BalanceComparator implements Comparator<Account> {

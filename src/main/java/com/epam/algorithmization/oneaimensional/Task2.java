@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Task2 {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         double[] array = arrayService.generateArrayOfDoubles();
         System.out.printf("Initial array%n%s", Arrays.toString(array));

@@ -3,7 +3,7 @@ package com.epam.threads.synchro;
 import java.util.concurrent.TimeUnit;
 
 public class ThreadClass extends Thread {
-    CommonResource commonResource;
+    private final CommonResource commonResource;
 
     public ThreadClass(String name, CommonResource commonResource) {
         super(name);

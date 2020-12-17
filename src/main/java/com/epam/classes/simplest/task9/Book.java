@@ -77,15 +77,15 @@ public class Book {
 
     @Override
     public String toString() {
-        return "\nBook{" +
-                "bookId=" + bookId +
-                ", title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", year=" + year +
-                ", pages=" + pages +
-                ", price=" + price +
-                ", binding='" + binding + '\'' +
-                '}';
+        return "\nBook{"
+                + "bookId=" + bookId
+                + ", title='" + title + '\''
+                + ", author='" + author + '\''
+                + ", publisher='" + publisher + '\''
+                + ", year=" + year
+                + ", pages=" + pages
+                + ", price=" + price
+                + ", binding='" + binding + '\''
+                + '}';
     }
 }

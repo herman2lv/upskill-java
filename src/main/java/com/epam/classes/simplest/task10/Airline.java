@@ -10,7 +10,8 @@ public class Airline {
     private String timeOfDeparture;
     private Set<Weekday> weekdays;
 
-    public Airline(String destination, String flight, PlaneType planeType, String timeOfDeparture, Set<Weekday> weekdays) {
+    public Airline(String destination, String flight, PlaneType planeType,
+                   String timeOfDeparture, Set<Weekday> weekdays) {
         this.destination = destination;
         this.flight = flight;
         this.planeType = planeType;
@@ -64,12 +65,12 @@ public class Airline {
 
     @Override
     public String toString() {
-        return "\nAirline{" +
-                "destination='" + destination + '\'' +
-                ", flight='" + flight + '\'' +
-                ", planeType=" + planeType +
-                ", timeOfDeparture='" + timeOfDeparture + '\'' +
-                ", weekdays=" + weekdays +
-                '}';
+        return "\nAirline{"
+                + "destination='" + destination + '\''
+                + ", flight='" + flight + '\''
+                + ", planeType=" + planeType
+                + ", timeOfDeparture='" + timeOfDeparture + '\''
+                + ", weekdays=" + weekdays
+                + '}';
     }
 }

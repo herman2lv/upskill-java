@@ -34,9 +34,9 @@ public class PaperWrapping implements Wrapping {
 
     @Override
     public String toString() {
-        return "\nWrapping{" +
-                "colour=" + colour +
-                ", texture=" + texture +
-                '}';
+        return "\nWrapping{"
+                + "colour=" + colour
+                + ", texture=" + texture
+                + '}';
     }
 }

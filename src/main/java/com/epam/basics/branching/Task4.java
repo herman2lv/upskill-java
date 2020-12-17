@@ -1,10 +1,10 @@
 package com.epam.basics.branching;
 
 public class Task4 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int frameHeight = 10;
         int frameWidth = 15;
-        System.out.printf("The frame's size is %dx%dcm\n", frameWidth, frameHeight);
+        System.out.printf("The frame's size is %dx%dcm%n", frameWidth, frameHeight);
         Brick brick = new Brick();
         brick.printSize();
         BrickService brickService = new BrickService();

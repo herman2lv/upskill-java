@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class Task1 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         String function = "z = ((a - 3) * b /2) + c";
         System.out.printf("Function: %s", function);
         System.out.print("\nPlease, enter a value of variable 'a'");

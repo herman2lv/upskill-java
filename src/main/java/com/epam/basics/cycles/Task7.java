@@ -1,7 +1,7 @@
 package com.epam.basics.cycles;
 
 public class Task7 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         NumberService numberService = new NumberService();
         int number1 = numberService.getIntFomConsole();
         System.out.println("Number is accepted");

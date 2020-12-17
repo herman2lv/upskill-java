@@ -5,7 +5,7 @@ import com.epam.algorithmization.sorting.ArrayService;
 import java.util.Arrays;
 
 public class Task3 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         double[] array = arrayService.generateArrayOfDoubles();
         System.out.printf("Array%n%s", Arrays.toString(array));

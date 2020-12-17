@@ -43,9 +43,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "\nStudent{" +
-                "name='" + name + '\'' +
-                ", \tgroup=" + group +
-                '}';
+        return "\nStudent{"
+                + "name='" + name + '\''
+                + ", \tgroup=" + group
+                + '}';
     }
 }

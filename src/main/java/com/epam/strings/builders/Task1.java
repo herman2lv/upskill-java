@@ -7,7 +7,7 @@ public class Task1 {
     public static void main(String[] args) {
         String string = "  Criminals   should            be in     prison   not    in   palace      ";
         System.out.printf("The string is:%n\"%s\"%n", string);
-        Pattern pattern = Pattern.compile("\s+");
+        Pattern pattern = Pattern.compile("\\s+");
         Matcher matcher = pattern.matcher(string);
         int maxLength = 0;
         while (matcher.find()) {

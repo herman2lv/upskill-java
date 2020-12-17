@@ -9,7 +9,7 @@ public class Text {
     private Sentence title;
     private List<Sentence> sentences = new ArrayList<>();
 
-    public void addSentences(Sentence ... sentences) {
+    public void addSentences(Sentence... sentences) {
         Collections.addAll(this.sentences, sentences);
     }
 

@@ -3,7 +3,7 @@ package com.epam.algorithmization.sorting;
 import java.util.Arrays;
 
 public class Task4 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[] array = arrayService.generateArray();
         System.out.println("\tInsertion sort");
@@ -12,11 +12,11 @@ public class Task4 {
             int element = array[i];
             int j = i - 1;
             while (j >= 0 && array[j] > element) {
-                array[j+1] = array[j];
+                array[j + 1] = array[j];
                 j--;
             }
-            array[j+1] = element;
+            array[j + 1] = element;
         }
-        System.out.printf("\nSorted array: %s", Arrays.toString(array));
+        System.out.printf("%nSorted array: %s", Arrays.toString(array));
     }
 }

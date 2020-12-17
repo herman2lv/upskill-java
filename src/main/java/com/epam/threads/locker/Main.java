@@ -14,6 +14,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(resource.content);
+        System.out.println(resource.getContent());
     }
 }

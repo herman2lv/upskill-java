@@ -1,7 +1,7 @@
 package com.epam.fundamentals;
 
 public class MainTask4 {
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         //Enter integers as command line arguments,
         // calculate their sum and print the result to the console
         if (args.length == 0) {

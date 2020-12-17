@@ -3,7 +3,7 @@ package com.epam.algorithmization.sorting;
 import java.util.Arrays;
 
 public class Task2 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         ArrayService arrayService = new ArrayService();
         int[] array = arrayService.generateArray();
         System.out.println("\tSelection sort");
@@ -21,6 +21,6 @@ public class Task2 {
             array[i] = minElement;
             array[minElementIndex] = temp;
         }
-        System.out.printf("\nSorted array: %s", Arrays.toString(array));
+        System.out.printf("%nSorted array: %s", Arrays.toString(array));
     }
 }

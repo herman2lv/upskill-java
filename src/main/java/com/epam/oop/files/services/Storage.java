@@ -16,7 +16,7 @@ public class Storage {
     private static final String SPECIAL_CHARS = ".*[|/*:'?\"].*";
     private static final String PATH_OF_ROOT_DIR = "/";
 
-    Map<String, MetadataI> storage = new HashMap<>();
+    private Map<String, MetadataI> storage = new HashMap<>();
 
     {
         storage.put(PATH_OF_ROOT_DIR, ROOT_DIR);

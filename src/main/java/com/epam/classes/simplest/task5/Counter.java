@@ -39,8 +39,8 @@ public class Counter {
             throw new IllegalStateException("Max range should be grater than the min range");
         }
         if (counterValue < minRange || counterValue > maxRange) {
-            throw new IllegalStateException("Counter initial state should be grater than or equal to the min range " +
-                    "and less than or equal to the max range");
+            throw new IllegalStateException("Counter initial state should be grater than or equal to the min range "
+                    + "and less than or equal to the max range");
         }
     }
 

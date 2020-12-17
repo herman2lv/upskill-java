@@ -15,7 +15,8 @@ public class Tour {
     private final Meals meals;
     private BigDecimal price;
 
-    public Tour(TourType type, String name, Country country, int duration, Transport transport, Meals meals, BigDecimal price) {
+    public Tour(TourType type, String name, Country country, int duration,
+                Transport transport, Meals meals, BigDecimal price) {
         tourId = idCounter++;
         this.type = type;
         this.name = name;
@@ -56,16 +57,16 @@ public class Tour {
 
     @Override
     public String toString() {
-        return "\nTour{" +
-                "tourId=" + tourId +
-                ", type=" + type +
-                ", name='" + name + '\'' +
-                ", country=" + country +
-                ", duration=" + duration +
-                ", transport=" + transport +
-                ", meals=" + meals +
-                ", price=" + price +
-                '}';
+        return "\nTour{"
+                + "tourId=" + tourId
+                + ", type=" + type
+                + ", name='" + name + '\''
+                + ", country=" + country
+                + ", duration=" + duration
+                + ", transport=" + transport
+                + ", meals=" + meals
+                + ", price=" + price
+                + '}';
     }
 
     public static class PriceComparator implements Comparator<Tour> {

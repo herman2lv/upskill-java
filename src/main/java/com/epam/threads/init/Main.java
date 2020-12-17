@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public static int iterationInterval = 500;
+    static final int ITERATION_INTERVAL = 500;
 
     public static void main(String[] args) {
         Thread thClass = new ThreadViaClass();

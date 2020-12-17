@@ -3,7 +3,7 @@ package com.epam.oop.treasury.beans;
 import java.math.BigDecimal;
 
 public class StandardTreasure implements Treasure {
-    private final static int ID_INITIAL_VALUE = 1;
+    private static final int ID_INITIAL_VALUE = 1;
     private static int idCounter = ID_INITIAL_VALUE;
     private final int treasureId;
     private String name;
@@ -40,10 +40,10 @@ public class StandardTreasure implements Treasure {
 
     @Override
     public String toString() {
-        return "\nTreasure{" +
-                "treasureId=" + treasureId +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                " USD}";
+        return "\nTreasure{"
+                + "treasureId=" + treasureId
+                + ", name='" + name + '\''
+                + ", price=" + price
+                + " USD}";
     }
 }

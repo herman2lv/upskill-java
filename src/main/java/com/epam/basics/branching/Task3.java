@@ -1,7 +1,7 @@
 package com.epam.basics.branching;
 
 public class Task3 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Point point1 = new Point();
         point1.generateCoordinates();
         point1.printCoordinates("Point1");

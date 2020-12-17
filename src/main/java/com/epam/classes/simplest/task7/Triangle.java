@@ -21,26 +21,27 @@ public class Triangle {
         this.angle3 = SUM_OF_THREE_ANGLES - angle1 - angle2;
         this.side1 = side1;
         this.side2 = BigDecimal.valueOf(side1 * Math.sin(Math.toRadians(angle1))
-                /Math.sin(Math.toRadians(angle3))).setScale(3, RoundingMode.HALF_UP).doubleValue();
+                / Math.sin(Math.toRadians(angle3))).setScale(3, RoundingMode.HALF_UP).doubleValue();
         this.side3 = BigDecimal.valueOf(side1 * Math.sin(Math.toRadians(angle2))
-                /Math.sin(Math.toRadians(angle3))).setScale(3, RoundingMode.HALF_UP).doubleValue();
+                / Math.sin(Math.toRadians(angle3))).setScale(3, RoundingMode.HALF_UP).doubleValue();
     }
 
     @Override
     public String toString() {
-        return "Triangle{" +
-                "angle1=" + angle1 +
-                "°, angle2=" + angle2 +
-                "°, angle3=" + angle3 +
-                "°, side1=" + side1 +
-                "cm, side2=" + side2 +
-                "cm, side3=" + side3 +
-                "cm}";
+        return "Triangle{"
+                + "angle1=" + angle1
+                + "°, angle2=" + angle2
+                + "°, angle3=" + angle3
+                + "°, side1=" + side1
+                + "cm, side2=" + side2
+                + "cm, side3=" + side3
+                + "cm}";
     }
 
-    public double getArea () {
+    public double getArea() {
         double semiperimeter = getPerimeter() / 2;
-        double result = Math.sqrt(semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (semiperimeter - side3));
+        double result = Math.sqrt(semiperimeter * (semiperimeter - side1)
+                * (semiperimeter - side2) * (semiperimeter - side3));
         return BigDecimal.valueOf(result).setScale(3, RoundingMode.HALF_UP).doubleValue();
     }
 

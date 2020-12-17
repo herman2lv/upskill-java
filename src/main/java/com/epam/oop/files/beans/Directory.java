@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Directory extends Metadata implements DirectoryI {
-    Set<MetadataI> innerObjects = new HashSet<>();
+    private Set<MetadataI> innerObjects = new HashSet<>();
 
     public Directory(String name) {
         super(name);

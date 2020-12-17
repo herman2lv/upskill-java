@@ -27,7 +27,8 @@ public class TreasureFromFileReader {
             Creator creator = new StandardTreasureCreator();
             for (String treasure : allTreasures) {
                 String[] treasureFields = treasure.split(":");
-                treasury.add(creator.createTreasure(treasureFields[0], BigDecimal.valueOf(Double.parseDouble(treasureFields[1]))));
+                treasury.add(creator.createTreasure(treasureFields[0],
+                        BigDecimal.valueOf(Double.parseDouble(treasureFields[1]))));
             }
             treasuryDAO.add(treasury);
         } catch (IOException e) {
