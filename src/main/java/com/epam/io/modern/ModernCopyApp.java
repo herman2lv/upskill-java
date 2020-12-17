@@ -8,8 +8,8 @@ import java.nio.file.StandardCopyOption;
 
 public class ModernCopyApp {
     public static void main(String[] args) {
-        Path inputFile = Paths.get("java.course/src/main/java/files", "input.txt");
-        Path outputFile = Paths.get("java.course/src/main/java/files", "copyResult.txt");
+        Path inputFile = Paths.get("src/main/resources", "input.txt");
+        Path outputFile = Paths.get("src/main/resources", "copyResult.txt");
         try {
             Files.copy(inputFile, outputFile, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {

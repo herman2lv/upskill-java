@@ -8,6 +8,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,7 +16,7 @@ public class EditContactWindow extends JDialog implements ActionListener {
     private static final String SAVE = "Save";
     private static final String CANCEL = "Cancel";
     private static final int INTERVAL = 5;
-    private static final int LABEL_WIDTHS = 75;
+    private static final int LABEL_WIDTHS = 100;
     private static final int TEXT_FIELD_WIDTHS = 325;
     private static final int BUTTON_WIDTH = 120;
     private static final int COMPONENT_HEIGHT = 25;
@@ -31,7 +32,7 @@ public class EditContactWindow extends JDialog implements ActionListener {
         buildFields();
         initFields(contact);
         buildButtons();
-        setModal(true);
+        setModalityType(Dialog.DEFAULT_MODALITY_TYPE);
         setResizable(false);
         setBounds(600, 350, 450, 195);
         setTitle("Contact editor");
@@ -88,12 +89,12 @@ public class EditContactWindow extends JDialog implements ActionListener {
     }
 
     private void buildButtons() {
-        JButton saveButton = new JButton("Save");
+        JButton saveButton = new JButton(SAVE);
         saveButton.setActionCommand(SAVE);
         saveButton.addActionListener(this);
         saveButton.setBounds(BUTTON_WIDTH, 5 * INTERVAL + 4 * COMPONENT_HEIGHT, BUTTON_WIDTH, COMPONENT_HEIGHT);
         add(saveButton);
-        JButton cancelButton = new JButton("Cancel");
+        JButton cancelButton = new JButton(CANCEL);
         cancelButton.setActionCommand(CANCEL);
         cancelButton.addActionListener(this);
         cancelButton.setBounds(2 * BUTTON_WIDTH + INTERVAL, 5 * INTERVAL + 4 * COMPONENT_HEIGHT,

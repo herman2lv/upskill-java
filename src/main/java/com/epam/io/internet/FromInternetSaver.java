@@ -8,8 +8,8 @@ import java.net.URL;
 
 public class FromInternetSaver {
     public static void main(String[] args) {
-        try (OutputStream outputStream = new FileOutputStream("java.course/src/main/java/files/outputNet.html")) {
-            URL url = new URL("https://www.vk.com/");
+        try (OutputStream outputStream = new FileOutputStream("src/main/resources/outputNet.html")) {
+            URL url = new URL("https://www.cia.gov/");
             try (BufferedInputStream bufferedInputStream = new BufferedInputStream(url.openStream())) {
                 while (true) {
                     int i = bufferedInputStream.read();

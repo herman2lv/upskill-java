@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<BookCatalogue>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BookCatalogue>
     <Book>
         <Title>Yogasana Vijnana: the Science of Yoga</Title>
         <Author>Dhirendra Brahmachari</Author>
@@ -16,12 +15,4 @@
         <Publisher>Harper &amp; Row</Publisher>
         <Cost currency="USD">2.95</Cost>
     </Book>
-    <Book>
-        <Title>Java from EPAM</Title>
-        <Author>Ihar Blinou</Author>
-        <Date>2020</Date>
-        <ISBN>978-985-581-391-1</ISBN>
-        <Publisher>Four Quarters</Publisher>
-        <Cost currency="BYN">30</Cost>
-    </Book>
-</BookCatalogue>
+<Book><Title>Java from EPAM</Title><Author>Ihar Blinou</Author><Date>2020</Date><ISBN>978-985-581-391-1</ISBN><Publisher>Four Quarters</Publisher><Cost currency="BYN">30</Cost></Book></BookCatalogue>

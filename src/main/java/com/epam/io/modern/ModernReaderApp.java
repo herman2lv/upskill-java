@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ModernReaderApp {
     public static void main(String[] args) {
-        Path inputFile = Paths.get("java.course/src/main/java/files", "input.txt");
+        Path inputFile = Paths.get("src/main/resources", "input.txt");
         List<String> content = new ArrayList<>();
         try {
             content = Files.readAllLines(inputFile);

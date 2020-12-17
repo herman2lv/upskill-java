@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class WriterApp {
     public static void main(String[] args) throws IOException {
-        File file = new File("java.course/src/main/java/files/output.txt");
+        File file = new File("src/main/resources/output.txt");
         if (file.getParentFile().mkdir()) {
             System.out.printf("Have created dir \"%s\" at%n\t\"%s\"%n", file.getParentFile().getName(),
                     file.getParentFile().getParentFile().getAbsolutePath());

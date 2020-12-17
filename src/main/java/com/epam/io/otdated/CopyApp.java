@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 
 public class CopyApp {
     public static void main(String[] args) {
-        try (FileReader fileReader = new FileReader("java.course/src/main/java/files/output.txt");
+        try (FileReader fileReader = new FileReader("src/main/resources/output.txt");
              BufferedReader bufferedReader = new BufferedReader(fileReader);
-             FileWriter fileWriter = new FileWriter("java.course/src/main/java/files/copyResult.txt")) {
+             FileWriter fileWriter = new FileWriter("src/main/resources/copyResult.txt")) {
             List<String> content = bufferedReader.lines().collect(Collectors.toList());
             for (String s : content) {
                 fileWriter.write(s + "\n");

@@ -28,7 +28,7 @@ public class ContactMainWindow extends JFrame implements ActionListener {
     private final ContactManger contactManger = new ContactManger();
     private final JTable contactTable = new JTable();
     private static final int MARGIN = 5;
-    private static final int MAIN_WINDOW_WIDTH = 900;
+    private static final int MAIN_WINDOW_WIDTH = 1000;
     private static final int MAIN_WINDOW_HEIGHT = 400;
     private static final int MAIN_WINDOW_X_COORDINATE = 400;
     private static final int MAIN_WINDOW_Y_COORDINATE = 300;

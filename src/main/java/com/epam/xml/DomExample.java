@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -28,9 +29,12 @@ import org.xml.sax.SAXException;
 public class DomExample {
     public static void main(String[] args) {
         try {
-            DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-//            Document document = documentBuilder.parse("java.course/src/main/java/files/BookCatalog.xml");
-            Document document = documentBuilder.parse("java.course/src/main/java/files/outputNet.html");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            dbFactory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+            dbFactory.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+            DocumentBuilder documentBuilder = dbFactory.newDocumentBuilder();
+            Document document = documentBuilder.parse("src/main/resources/BookCatalog.xml");
+
             Node root = document.getDocumentElement();
             System.out.println("List of books:\n");
             NodeList books = root.getChildNodes();
@@ -48,7 +52,7 @@ public class DomExample {
                     System.out.println("===================");
                 }
             }
-//            addNewBook(document);
+            addNewBook(document);
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
@@ -83,7 +87,7 @@ public class DomExample {
     private static void writeDocument(Document document) throws TransformerFactoryConfigurationError {
         try {
             DOMSource domSource = new DOMSource(document);
-            FileOutputStream fileOutputStream = new FileOutputStream("java.course/src/main/java/files/EditedBookCatalog.xml");
+            FileOutputStream fileOutputStream = new FileOutputStream("src/main/resources/EditedBookCatalog.xml");
             StreamResult streamResult = new StreamResult(fileOutputStream);
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
             transformer.transform(domSource, streamResult);
@@ -98,7 +102,7 @@ class StaxWriteExample {
     public static void main(String[] args) {
         try {
             XMLOutputFactory output = XMLOutputFactory.newInstance();
-            XMLStreamWriter writer = output.createXMLStreamWriter(new FileWriter("java.course/src/main/java/files/CreatedBookCatalog.xml"));
+            XMLStreamWriter writer = output.createXMLStreamWriter(new FileWriter("src/main/resources/CreatedBookCatalog.xml"));
 
             // Открываем XML-документ и Пишем корневой элемент BookCatalogue
             writer.writeStartDocument("1.0");

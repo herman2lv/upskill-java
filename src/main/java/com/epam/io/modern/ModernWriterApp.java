@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class ModernWriterApp {
     public static void main(String[] args) {
-        Path outputFile = Paths.get("java.course/src/main/java/files", "outputNew.txt");
+        Path outputFile = Paths.get("src/main/resources", "outputNew.txt");
         try {
             Files.writeString(outputFile, '\n' + new Date().toString() + '\n', StandardOpenOption.APPEND);
             for (int i = 1; i <= 5; i++) {

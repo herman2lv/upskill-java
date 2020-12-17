@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TreasureFromFileReader {
-    public static String FILE_PATH = "data/";
-    public static String FILE_NAME = "treasures.txt";
+    public static final String FILE_PATH = "src/main/resources/";
+    public static final String FILE_NAME = "treasures.txt";
     private final TreasuryDAOI treasuryDAO;
 
     public TreasureFromFileReader(TreasuryDAOI treasuryDAO) {

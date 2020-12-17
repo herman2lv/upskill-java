@@ -8,11 +8,10 @@ import java.net.URL;
 public class FromInternetReader {
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://www.vk.com/");
+            URL url = new URL("https://www.cia.gov/");
             InputStream inputStream = url.openStream();
             try (BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream)) {
                 while (true) {
-                    byte[] bytes = new byte[100];
                     int i = bufferedInputStream.read();
                     if (i != -1) {
                         System.out.print((char) i);
