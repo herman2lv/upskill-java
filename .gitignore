@@ -1,2 +1,8 @@
 # Project exclude paths
-/target/
+target/
+.idea/
+*.iml
+*.jar
+*.class
+*.log
+

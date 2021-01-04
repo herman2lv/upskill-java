@@ -10,6 +10,11 @@ import java.sql.Statement;
 
 public class SimpleDBPostgres {
     public static void main(String[] args) {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         String url = "jdbc:postgresql://localhost:5432/contactdb";
         String user = "postgres";
         String password = "admin";

@@ -6,8 +6,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class LockerResource {
     private final StringBuilder content = new StringBuilder();
-    private ReentrantLock lock = new ReentrantLock(true);
-    private Condition condition = lock.newCondition();
+    private final ReentrantLock lock = new ReentrantLock(true);
+    private final Condition condition = lock.newCondition();
 
     public StringBuilder getContent() {
         return content;
